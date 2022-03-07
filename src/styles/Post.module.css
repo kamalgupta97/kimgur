@@ -1,0 +1,49 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.figure {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 10px;
+  break-inside: avoid;
+  background-color: #03070067;
+  opacity: 1;
+}
+
+.figure > img {
+  grid-row: 1 / -1;
+  grid-column: 1;
+}
+
+.figure a {
+  color: white;
+  text-decoration: none;
+}
+
+.figcaption {
+  width: 90%;
+  grid-row: 3;
+  grid-column: 1;
+  padding: 0.2em 0.5em;
+  justify-self: center;
+  opacity: 0.7;
+}
+.figcaption > p {
+  font-size: 16px;
+  text-align: left;
+}
+
+.figcaptionIcons {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.figcaptionIcon {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
